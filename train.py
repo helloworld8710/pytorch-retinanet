@@ -23,7 +23,7 @@ print('CUDA available: {}'.format(torch.cuda.is_available()))
 def main(args=None):
     parser = argparse.ArgumentParser(description='Simple training script for training a RetinaNet network.')
 
-    parser.add_argument('--dataset', help='Dataset type, must be one of csv or coco.')
+    parser.add_argument('--dataset', help='Dataset type, must be one of csv or coco.') # 可选参数为：'coco'和'csv'
     parser.add_argument('--coco_path', help='Path to COCO directory')
     parser.add_argument('--csv_train', help='Path to file containing training annotations (see readme)')
     parser.add_argument('--csv_classes', help='Path to file containing class list (see readme)')
