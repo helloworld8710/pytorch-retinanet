@@ -25,9 +25,9 @@ def main(args=None):
 
     parser.add_argument('--dataset', help='Dataset type, must be one of csv or coco.') # 可选参数为：'coco'和'csv'
     parser.add_argument('--coco_path', help='Path to COCO directory')
-    parser.add_argument('--csv_train', help='Path to file containing training annotations (see readme)')
-    parser.add_argument('--csv_classes', help='Path to file containing class list (see readme)')
-    parser.add_argument('--csv_val', help='Path to file containing validation annotations (optional, see readme)')
+    parser.add_argument('--csv_train', help='Path to file containing training annotations (see readme)') # train csv文件路径
+    parser.add_argument('--csv_classes', help='Path to file containing class list (see readme)') # classes csv文件路径
+    parser.add_argument('--csv_val', help='Path to file containing validation annotations (optional, see readme)') # val csv文件路径
 
     parser.add_argument('--depth', help='Resnet depth, must be one of 18, 34, 50, 101, 152', type=int, default=50)
     parser.add_argument('--epochs', help='Number of epochs', type=int, default=100)
